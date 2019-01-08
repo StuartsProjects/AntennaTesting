@@ -18,7 +18,7 @@ For most IOT type applications we want the transmitter to radiate maximum power 
 
 Thus to measure an antenna's performance we can simulate (or be very close to) the real world situation in a large flat open area. A large playing field is good, as long as you are maybe 100m or so from trees or buildings which could affect our tests. I use a local playing field, see the picture below. 
 
-![Picture 1](Pictures/PlayingField.jpg)
+![Picture 1](Pictures/PlayingField.JPG)
 
 So we have an antenna to test, what next ? 
 
