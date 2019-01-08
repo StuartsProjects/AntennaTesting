@@ -23,7 +23,7 @@ To Do:
 */
 
 
-#define LCDI2C_Address 0x3F                      //define I2C address for PCF8574 LCD backpack, usually 0x27 or 0x3F
+#define LCDI2C_Address 0x27                      //define I2C address for PCF8574 LCD backpack, usually 0x27 or 0x3F
 
 const uint32_t Frequency = 434400000;            //RSSI listen frequency
 #define CalibrationOffset 0                      //adjustment for frequency in Hz, assumed at room temp

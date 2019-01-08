@@ -64,20 +64,21 @@ void loop()
   int16_t noise_level = 0;
   float display_rssi;
 
-  for (i = 1; i <= 100; i++)
+  for (i = 1; i <= 50; i++)
   {
     BackGroundRSSI = lora_ReadBackgroundRSSI();    //get the background noise level
     noise_level = noise_level + BackGroundRSSI;
     delay(5);
   }
 
-  display_rssi = (float) noise_level / 100;
+  display_rssi = (float) noise_level / 50;
   Serial.print(display_rssi);
   Serial.println(F("dBm"));
-
-  disp.setCursor(1, 1);
+  disp.clearDisplay();
+  disp.setCursor(1, 12);
   disp.print(display_rssi, 1);
   disp.print(" dBm   ");
+  disp.display();
 
 }
 
@@ -160,13 +161,16 @@ void setup()
   Wire.begin();
 
   Serial.println(F("Using SSD1306"));
-  disp.begin(20, 4);                             //initialize the lcd for 20 chars 4 lines, turn on backlight
+  disp.begin(SSD1306_SWITCHCAPVCC, SSD1306_Address);           //initialize with the I2C addr 0x3C (for the 128x64)
+  disp.clearDisplay();
+  disp.setTextSize(1);
+  disp.setTextColor(WHITE);
   disp.setCursor(0, 0);
   disp.print(F("RSSI Meter"));
-  disp.setCursor(0, 1);
+  disp.setCursor(0, 12);
   disp.print(F("Starting"));
+  disp.display();
   delay(1000);
-  disp.setCursor(0, 1);
   disp.clearDisplay();
 
   Serial.println(F("RSSI Meter Starting"));
