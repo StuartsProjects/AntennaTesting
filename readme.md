@@ -45,7 +45,7 @@ The RSSI meter program can be used by reading the serial monitor output on a PC 
 A more conventional way of reading signal strength may be with a spectrum analyser, either bench type or portable. The portable type is a lot more convenient to use out of doors, see the RF Explorer below for an example;
 
 
-![Picture 4](Pictures/RFExplorer.jpg)
+![Picture 4](Pictures/RFExplorer.JPG)
 
 There is also the option of using a Realtek SDR (software defined radio)  dongle with a PC or Android phone\tablet, but it can be difficult to get precise RSSI readings.
 
@@ -72,7 +72,7 @@ The receivers are set to the same frequency as the Ping tone transmitter. The re
 
 The transmitter and receiver (with antennas attached) can be simply taped to a thick bamboo pole and pushed in the ground, maybe 50M apart. Here is a test transmitter in a metal box on another antenna testing range I have used, Tenby beach in South Wales.
 
-![Picture 5](Pictures/Tenby1.jpg)
+![Picture 5](Pictures/Tenby1.JPG)
 
 Alternatively it's easy to make a tall tripod from three thick bamboo poles and hang the transmitter and antenna from the middle see picture;
 
