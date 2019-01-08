@@ -24,7 +24,7 @@ So we have an antenna to test, what next ?
 
 We need a transmitter and it's antenna to radiate a signal on the chosen frequency. Fortunately the low cost Semtech SX127x based LoRa modules can do just this, they can transmit a radio frequency carrier at a chosen frequency at a power level of between 2dBm and 20dBm. See below for a basic Arduino transmitter. It's a simple PCB with LoRa module, Arduino Pro Mini and a battery pack can be fixed to the rear;
 
-![Picture 1](Pictures/Transmitter.jpg)
+![Picture 2](Pictures/Transmitter.jpg)
 
 The board can be fitted with a RFM9x LoRa module and has single Mikrobus socket. There are options for I\O and Grove connectors, MicroSD card and a low quiescent current regulator. The boards can be bought in pairs from [http://www.LoRaTracker.uk](http://www.LoRaTracker.uk "http://www.LoRaTracker.uk"), but any 3.3V Arduino will do with the appropriate connections.   
 
@@ -38,14 +38,14 @@ There are also settings for a calibration offset, to compensate for any frequenc
 
 Next we need a way of measuring the signal strength some distance away from the transmitter. We can also do this with a LoRa module, see below the same PCB as above with a display added so we can see the received signal strength;
 
-![Picture 1](Pictures/Receiver.jpg)
+![Picture 3](Pictures/Receiver.jpg)
 
 The RSSI meter program can be used by reading the serial monitor output on a PC but it's far more convenient to use one of the display options for a hand-held portable device, with either an SSD1306 OLED display or a 20x4 3.3V LCD display run via a low cost PCF8574 I2C expander.
 
 A more conventional way of reading signal strength may be with a spectrum analyser, either bench type or portable. The portable type is a lot more convenient to use out of doors, see the RF Explorer below for an example;
 
 
-![Picture 1](Pictures/RFExplorer.jpg)
+![Picture 4](Pictures/RFExplorer.jpg)
 
 There is also the option of using a Realtek SDR (software defined radio)  dongle with a PC or Android phone\tablet, but it can be difficult to get precise RSSI readings.
 
@@ -72,11 +72,11 @@ The receivers are set to the same frequency as the Ping tone transmitter. The re
 
 The transmitter and receiver (with antennas attached) can be simply taped to a thick bamboo pole and pushed in the ground, maybe 50M apart. Here is a test transmitter in a metal box on another antenna testing range I have used, Tenby beach in South Wales.
 
-![Picture 1](Pictures/Tenby1.jpg)
+![Picture 5](Pictures/Tenby1.jpg)
 
 Alternatively it's easy to make a tall tripod from three thick bamboo poles and hang the transmitter and antenna from the middle see picture;
 
-![Picture 1](Pictures/Colinear_under_test.jpg)
+![Picture 6](Pictures/Colinear_under_test.jpg)
 
 In the above picture I was testing the de-tuning affect of a plastic pipe on the antenna. The actual transmitter, a small tracker PCB and battery is hanging off the bottom of the antenna's SMA connector.
 
@@ -88,7 +88,7 @@ If we had a reference antenna, which we will call antenna A, we could swap anten
 
 For a reference antenna (A), build a 1/4 wave vertical with radials, see picture, this is an 868Mhz antenna, its built on a N-type chassis socket. 
 
-![Picture 1](Pictures/868MhzReference.jpg)
+![Picture 7](Pictures/868MhzReference.jpg)
 
 This antenna is easy to build and difficult to get wrong. If the length of the centre vertical and downward pointing radials are all 1/4 wave at the frequency of interest, then the performance should be predictable and it can act as our reference. 
 
@@ -101,13 +101,13 @@ If we have a range of different antennas, say C, D and maybe E, it's the work of
 
 Once we have this simple antenna testing range set-up, we can use it to trim or tune antennas too. For instance if we build a reference antenna type (see above) we can build it with wires that are say 50% longer than a 1/4 calculation calculation suggests. Then with a suitable assistant (or a lot of walking) we can trim short bits off the antenna wires and measure the effect with our receiver. Record the results, plot a graph and it can look like this, it shows the effect on radiated power as a 868Mhz dipole is trimmed to length;
 
-![Picture 1](Pictures/AntennaTrimDipole.jpg)
+![Picture 8](Pictures/AntennaTrimDipole.jpg)
 
 Note that maximum radiated power occurs at around 7.75cm. This is different to the length that calculations for a 868Mhz dipole suggest, which is 8.68cm. At the so called 'correct' length the antenna actually radiates about 1.5dBm less than the optimum length, so there is an improvement gained of 1.5dBm in performance by carrying out a real world tuning test. 
 
 The LoRa modules do vary slightly in their output impedance, see the result of tuning dipoles of 3 separate LoRa modules;
 
-![Picture 1](Pictures/AntennaTrim3Modules.jpg)
+![Picture 9](Pictures/AntennaTrim3Modules.jpg)
 
 Note that each module has a slightly different optimum length, but all are shorter than what a theoretical calculation suggests (8.68cm). 
 
