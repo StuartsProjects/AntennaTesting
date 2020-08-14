@@ -1,12 +1,12 @@
 //LoRa5.h
-//Created from LoRa4.h from LoRaTracker library 08/12/18
+//Created from LoRa4.h from Tracker library 08/12/18
 /*
 *******************************************************************************************************************************
-  Easy Build LoRaTracker Programs for Arduino
+  Easy Build Tracker Programs for Arduino
 
   Copyright of the author Stuart Robinson - 09/12/18
 
-  http://www.LoRaTracker.uk
+  
 
   These programs may be used free of charge for personal, recreational and educational purposes only.
 
@@ -23,7 +23,7 @@
   the library.
   
 
-  LoRaWAN uses a different sync word (0x34) from the default (0x12) used by the LoRaTracker libraries. The library uses the
+  LoRaWAN uses a different sync word (0x34) from the default (0x12) used by the Tracker libraries. The library uses the
   default sync word, to use the LoRaWAN syncword make sure there is a define '#define UseLoRaWAN' before including this library.
 
   To Do:
@@ -1347,9 +1347,9 @@ void lora_PrintLoRaSettings()
 }
 
 
-int8_t lora_returnRSSI(uint8_t RegData)
+int8_t lora_returnRSSI(int8_t RegData)
 {
-  RegData = (-164 + RegData);
+  RegData = (157 - RegData) * (-1);
   return RegData;
 }
 
@@ -1367,6 +1367,7 @@ int8_t lora_returnSNR(uint8_t RegData)
   }
   return RegData;
 }
+
 
 int8_t lora_ReadBackgroundRSSI()
 {

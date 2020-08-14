@@ -6,11 +6,11 @@
 
 /*
 *****************************************************************************************************************************
-LoRaTracker Test Programs
+Tracker Test Programs
 
 Copyright of the author Stuart Robinson - 29/11/2017
 
-http://www.LoRaTracker.uk
+
 
 These programs may be used free of charge for personal, recreational and educational purposes only.
 
@@ -29,7 +29,7 @@ Program operation
 This test program has been scans the I2C bus for valid device, addresses of devices found are printed on the Arduino IDE Serial
 monitor. 
 
-Devices used by LoRaTracker porgrams;
+Devices used by Tracker porgrams;
 
 I2CDisplay_Backpack 0x08
 PCF8574 I\O Expander 0x3F   (used by LCD display also)
