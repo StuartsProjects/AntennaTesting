@@ -2,7 +2,7 @@
 
 Really it is. 
 
-The prime objective of an antenna is to radiate the maximum amount of power in the direction of choice. A secondary objective is to match the transmitter output impedance to the antenna so that minimum power is reflected back into the transmitter as excess reflected power can damage a transmitter.
+The prime objective of an antenna is to radiate the maximum amount of power in the direction of choice. A secondary objective is to match the transmitter output impedance to the antenna so that minimum power is reflected back into the transmitter as this reflected power can damage a transmitter.
 
 For our low power, typically less than 100mW, Internet of Things devices, in order to maximise range (distance) we normally concentrate on maximising radiated power rather than obsessing about antenna impedance matching. We still do however, need to be confident that a reasonably functional antenna is attached, even low power LoRa devices can be damaged if they transmit with no antenna or one that is defective. 
 
